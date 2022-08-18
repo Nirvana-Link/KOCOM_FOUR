@@ -1,0 +1,36 @@
+#ifndef LAYOUT_ABSENT_H
+#define LAYOUT_ABSENT_H
+#include"ui_api.h"
+
+enum absent_common_but{
+    DEL_ALL_BUTTON,
+    PREV_BUTTON,
+    NEXT_BUTTON,
+    EVENT_BUTTON,
+    CLEAR_ACK,
+    CLEAR_CANCEL,
+    ABSENT_COM_BUT_TOTAL
+};
+enum absent_sensor_but{
+    POWER_BUTTON,
+    SENSOR1_BUTTON,
+    SENSOR2_BUTTON,
+    ACTIVE_NOW_BUTTON,
+    SENSOR_BUT_TOTAL
+};
+enum absent_event_but{
+    EVENT1_BUTTON,
+    EVENT2_BUTTON,
+    EVENT3_BUTTON,
+    EVENT4_BUTTON,
+    EVENT5_BUTTON,
+    EVENT6_BUTTON,
+    EVENT_BUT_TOTAL
+};
+
+button ABS_COMMON_BUT[ABSENT_COM_BUT_TOTAL];
+button ABS_SENSOR_BUT[SENSOR_BUT_TOTAL];
+button ABS_EVENT_BUT[EVENT_BUT_TOTAL];
+
+
+#endif
